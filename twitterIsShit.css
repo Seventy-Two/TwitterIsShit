@@ -78,7 +78,12 @@
 	.top-timeline-tweetbox .timeline-tweet-box .t1-form {
     		margin-left: 0;
 	}
-
+	.global-nav .search-icon .Icon {
+		display: none !important;
+	}
+	.moments {
+		display: none !important;
+	}
 }
 
 
