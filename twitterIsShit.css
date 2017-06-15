@@ -75,6 +75,10 @@
 	.RichEditor, .global-nav .search-input{
 		border-radius: 0px !important;
 	}	
+	.top-timeline-tweetbox .timeline-tweet-box .t1-form {
+    		margin-left: 0;
+	}
+
 }
 
 
