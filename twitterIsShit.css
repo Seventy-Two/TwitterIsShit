@@ -1,6 +1,5 @@
 @-moz-document domain("twitter.com") {
 
-	html,body{}
 	.promptbird,
 	.nav>li>a .text,
 	.BannersContainer,
@@ -16,8 +15,10 @@
 	.is-preview,
 	.expanded-content,
 	.tweet-actions,
-	.signup-call-out.profile-signup-call-out
-	{display:none !important;}
+	.signup-call-out.profile-signup-call-out,
+	.wtf-module, .trends, .site-foote{
+		display:none !important;
+	}
 	.wrapper {
 		width: 90% !important;
 	}
@@ -27,11 +28,7 @@
 		float: none !important;
 	}
 
-	.wtf-module, .trends, .site-footer {
-		display: none !important;    
-	}
 	/* Comment the below out to fix media on TL*/
-
 	.tweet .js-macaw-cards-iframe-container,
 	.tweet .AdaptiveMedia,
 	.tweet .QuoteMedia {
@@ -53,8 +50,6 @@
 
 	.twitter-timeline-link.u-hidden,
 	.twitter-timeline-link.u-hiddenVisually {
-		width: auto !important;
-		height: auto !important;
 		clip: auto !important;
 		position: relative !important;
 		display: inline !important;
@@ -64,11 +59,10 @@
 	a.twitter-timeline-link.u-hiddenVisually::before {
 		content: " ";
 	}
-	
 	/* stop commenting shit out here */
 	
 	/* fix to the fucking dumb rounded garbage 15/06/2017 */
-		.edge-design .avatar, .EdgeButton, .edge-design .Avatar, .edge-design .DashboardProfileCard-avatarImage, .edge-design .DashboardProfileCard-avatarLink, .edge-design .Gallery.is-tweetless .Gallery-content, .edge-design .Gallery.is-tweetless .Gallery-media, .edge-design .MomentCapsuleCover .MomentUserByline-avatar, .edge-design .MomentCapsuleItemTweet--withText .MomentUserByline-avatar, .edge-design .MomentCapsuleSummary .MomentUserByline-avatar, .edge-design .MomentMakerRecommendedTweetsSearch--users .MomentMakerRecommendedTweetsSearch-userContainer .avatar, .edge-design .ProfileAvatar, .edge-design .ProfileAvatar-image, .edge-design .ProfileAvatar-placeholderImage, .edge-design .ProfileAvatarEditing, .edge-design .ProfileAvatarEditing-button, .edge-design .ProfileAvatarEditing-overlay, .edge-design .ProfileCard-avatarImage, .edge-design .ProfileCard-avatarLink, .edge-design .ProfileCardMini-avatarImage, .edge-design .ProfileListItem-avatar, .edge-design .ProfileUserList .Avatar , .nav .session .dropdown-toggle {
+	.edge-design .avatar, .EdgeButton, .edge-design .Avatar, .edge-design .DashboardProfileCard-avatarImage, .edge-design .DashboardProfileCard-avatarLink, .edge-design .Gallery.is-tweetless .Gallery-content, .edge-design .Gallery.is-tweetless .Gallery-media, .edge-design .MomentCapsuleCover .MomentUserByline-avatar, .edge-design .MomentCapsuleItemTweet--withText .MomentUserByline-avatar, .edge-design .MomentCapsuleSummary .MomentUserByline-avatar, .edge-design .MomentMakerRecommendedTweetsSearch--users .MomentMakerRecommendedTweetsSearch-userContainer .avatar, .edge-design .ProfileAvatar, .edge-design .ProfileAvatar-image, .edge-design .ProfileAvatar-placeholderImage, .edge-design .ProfileAvatarEditing, .edge-design .ProfileAvatarEditing-button, .edge-design .ProfileAvatarEditing-overlay, .edge-design .ProfileCard-avatarImage, .edge-design .ProfileCard-avatarLink, .edge-design .ProfileCardMini-avatarImage, .edge-design .ProfileListItem-avatar, .edge-design .ProfileUserList .Avatar , .nav .session .dropdown-toggle {
 		border-radius: 5px !important;
 	}
 	
@@ -76,7 +70,7 @@
 		border-radius: 0px !important;
 	}	
 	.top-timeline-tweetbox .timeline-tweet-box .t1-form {
-    		margin-left: 0;
+		margin-left: 0;
 	}
 	.global-nav .search-icon .Icon {
 		display: none !important;
@@ -85,6 +79,3 @@
 		display: none !important;
 	}
 }
-
-
-
