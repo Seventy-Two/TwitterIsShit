@@ -1,0 +1,81 @@
+@-moz-document domain("twitter.com") {
+
+	html,body{}
+	.promptbird,
+	.nav>li>a .text,
+	.BannersContainer,
+	.wrapper-home .dashboard,
+	.wrapper .mini-profile,
+	.wrapper .wtf-module,
+	.wrapper .trends,
+	.wrapper .Footer,
+	.wrapper .enhanced-media-thumbnails,
+	.wrapper .module.component,
+	.wrapper .newest-members-module,
+	.header-inner,
+	.is-preview,
+	.expanded-content,
+	.tweet-actions,
+	.signup-call-out.profile-signup-call-out
+	{display:none !important;}
+	.wrapper {
+		width: 90% !important;
+	}
+
+	.dashboard, .content-main {
+		width: auto !important;
+		float: none !important;
+	}
+
+	.wtf-module, .trends, .site-footer {
+		display: none !important;    
+	}
+	/* Comment the below out to fix media on TL*/
+
+	.tweet .js-macaw-cards-iframe-container,
+	.tweet .AdaptiveMedia,
+	.tweet .QuoteMedia {
+		display: none !important;
+	}
+
+	.tweet .js-macaw-cards-iframe-container[data-card-name*="poll"] {
+		display: block !important;
+	}
+
+	.permalink-tweet .js-macaw-cards-iframe-container,
+	.permalink-tweet .AdaptiveMedia,
+	.permalink-tweet .QuoteMedia,
+	.opened-tweet .js-macaw-cards-iframe-container,
+	.opened-tweet .AdaptiveMedia,
+	.opened-tweet .QuoteMedia {
+		display: block !important;
+	}
+
+	.twitter-timeline-link.u-hidden,
+	.twitter-timeline-link.u-hiddenVisually {
+		width: auto !important;
+		height: auto !important;
+		clip: auto !important;
+		position: relative !important;
+		display: inline !important;
+	}
+
+	a.twitter-timeline-link.u-hidden::before,
+	a.twitter-timeline-link.u-hiddenVisually::before {
+		content: " ";
+	}
+	
+	/* stop commenting shit out here */
+	
+	/* fix to the fucking dumb rounded garbage 15/06/2017 */
+	.edge-design .avatar, .EdgeButton{
+		border-radius: 5px !important;
+	}
+	
+	.RichEditor, .global-nav .search-input{
+		border-radius: 0px !important;
+	}	
+}
+
+
+
